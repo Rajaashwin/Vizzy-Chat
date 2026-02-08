@@ -2,7 +2,7 @@ import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/vizzy-chat/',  // GitHub Pages path
+  base: '/Vizzy-Chat/',  // GitHub Pages path - must match repo name exactly
   plugins: [react()],
   build: {
     outDir: 'dist',
