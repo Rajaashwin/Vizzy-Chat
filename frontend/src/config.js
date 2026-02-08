@@ -5,7 +5,7 @@ const isDevelopment = import.meta.env.MODE === 'development';
 
 export const API_BASE_URL = isDevelopment 
   ? 'http://localhost:8000'
-  : import.meta.env.VITE_API_URL || 'https://vizzy-backend.railway.app'; // Replace with your Railway URL
+  : import.meta.env.VITE_API_BASE_URL || 'https://vizzy-backend.railway.app'; // use VITE_API_BASE_URL for consistency
 
 export const API_ENDPOINTS = {
   chat: `${API_BASE_URL}/chat`,
